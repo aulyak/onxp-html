@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table border="1">
+    <tr>
+      <td colspan="2">
+        <h1>- Registration Page -</h1>
+        <h3>Register Your Free Account <a href="#registration-form">Here.</a></h2>
+      </td>
+    </tr>
+    <!-- video section -->
+    <tr>
+      <!-- video -->
+      <td colspan>
+        <h2>Quotes of the Day</h2>
+        <p>And the world keeps spinning around.</p>
+        <video controls width="400" autoplay loop>
+          <source src="./media/earth-video.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </td>
+      <!-- iframe -->
+      <td colspan>
+        <h2>Today's Highlight</h2>
+        <p>Enjoy this highlight of the legendary Sage Main.</p>
+        <iframe src="https://www.youtube.com/embed/MKBS3_i_SO0?autoplay=1&mute=1" width="420" height="315"
+          allowfullscreen></iframe>
+      </td>
+    </tr>
+    <!-- audio section -->
+    <tr>
+      <td colspan="2">
+        <p>
+          &#127925;&#127926;&#127932;&#127933;&#127925;&#127926;&#127932;&#127933;&#127925;&#127926;&#127932;&#127933;&#127926;
+        </p>
+        <audio controls autoplay loop>
+          <source src="./media/bg-music.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        enjoy the music while you're here~ music never fails to make the day better!
+        <p>
+          &#127925;&#127926;&#127932;&#127933;&#127925;&#127926;&#127932;&#127933;&#127925;&#127926;&#127932;&#127933;&#127926;
+        </p>
+      </td>
+    </tr>
+    <!-- form & image section -->
+    <tr>
+      <!-- form -->
+      <td>
+        <p> Fill in the form to create your account.</p>
+        <form id="registration-form" action="#registration-form" method="get">
+          &nbsp;&nbsp;
+          <label for="name">User Name:</label>
+          <input type="text" id="username" name="username" pattern="[a-z0-9_]{1,10}"
+            title="User name must be 1-10 characters long and can only contain lowercase letters, numbers, and underscores"
+            required placeholder="Enter your username">
+          <br><br>
+
+          &nbsp;&nbsp;
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (@, $, !, %, *, ?, &)"
+            required>
+          <br><br>
+
+          &nbsp;&nbsp;
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+          <br><br>
+
+          &nbsp;&nbsp;
+          <label for="hobby">Hobby:</label>
+          <input type="checkbox" id="reading" name="hobby" value="reading">
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="gaming" name="hobby" value="gaming">
+          <label for="gaming">Gaming</label>
+          <input type="checkbox" id="sports" name="hobby" value="sports">
+          <label for="sports">Sports</label>
+          <input type="checkbox" id="music" name="hobby" value="music">
+          <label for="music">Music</label>
+          <input type="checkbox" id="cooking" name="hobby" value="cooking">
+          <label for="cooking">Cooking</label>
+          <input type="checkbox" id="painting" name="hobby" value="painting">
+          <label for="painting">Painting</label>
+          &nbsp;&nbsp;
+          <br><br>
+
+          &nbsp;&nbsp;
+          <input type="submit" value="Submit">
+        </form>
+      </td>
+      <!-- image -->
+      <td>
+        <img src="" alt="">
+        <img src="./media/cat-photo.jpg" alt="Cat Image">
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
