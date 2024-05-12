@@ -5,6 +5,14 @@
   --main-text-color: #333;
 }
 
+form {
+  padding-left: 10px;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+}
+
 table,
 th,
 td {
@@ -36,8 +44,7 @@ label {
 
 .container {
   max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -70,22 +77,21 @@ iframe {
   max-width: 100%;
   height: 400px;
   aspect-ratio: 4/3;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: block;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
 }
+
 input[type='checkbox'] {
   flex: none;
 }
